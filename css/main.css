@@ -1,0 +1,440 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+body{
+    height:2000px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+}
+.home .nav{
+    overflow: auto;
+}
+.home .nav ul{
+    list-style-type: none;
+}
+.home .nav ul{
+    margin: 10px;
+}
+
+.home .nav ul li{
+    float: right;
+    margin: 20px;
+
+}
+.home .nav ul li a{
+   text-decoration: none;
+    color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.home .nav ul li a:hover{
+    color: black
+}
+.home .nav ul .logo {
+    color: goldenrod;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home .nav ul .logo span{
+    color: red;
+}   
+
+
+
+
+
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+.images {
+    float: left;
+    margin-top: 20px;
+    display: flex;
+}
+.images .one{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+}
+.images .two{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+
+}
+.images .three{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+}
+.images .four{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+}
+.images .five{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+.source{
+    width: 30%;
+    color: goldenrod;
+    font-size: 20px;
+}
+.source P{
+    color:gray;
+    font: bold;
+   font-size: 15px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.source li button{
+    color: white;
+    background-color:goldenrod;
+    border: firebrick;
+    padding: 10px 5px;
+    margin: 30px;
+}   
+.source{
+    width: 30%;
+    color: goldenrod;
+    display: inline-block;
+    border: none;
+    list-style-type: none;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.source P{
+    color:gray;    
+   font-size: smaller;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.source li button{
+    color: white;
+    background-color:goldenrod;
+    border: firebrick;
+    padding: 10px 5px;
+    margin: 30px;
+}   
+.source li button:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+h2{
+   color: goldenrod;
+   font-size: 35px;
+   font-family: 'Courier New', Courier, monospace;
+   position: relative;
+   margin-left: 20px;
+}
+
+h2::after{
+    content: "";
+   width: 80%;
+   height: 20px;
+   background-color: gray;
+   position: absolute;
+   top: 22%;
+   right: 0;
+   opacity: 0.5;
+   left: 19%;
+
+}
+
+ 
+
+
+
+
+
+
+.place{
+    display: flex;
+    margin-top:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.place .point{
+    padding: 10px;
+    border: 1px solid gray;
+    border-top: none;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+.place .point h1{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.place .point h5{
+    font-size: 15px;
+    color: red;
+    margin-bottom: 5px;
+}
+.place .point .first{
+    width: 280px;
+    height: 190px;
+}
+
+.place .point .siu{
+    width: 280px;
+    height: 190px;
+}
+
+.place .point .second{
+    width: 280px;
+    height: 190px;
+}
+
+
+
+
+
+
+.end{
+    display: flex;
+    color: white;
+    background: goldenrod;
+    padding-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 60px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.end .ww{
+    width: 30%;
+    font-size: 35px;
+    justify-content: space-around;
+}
+.end .ww h1{
+    
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+.end .ww p{
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+ 
+
+
+
+
+
+  
+@media(max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    .home .nav ul .logo{
+        font-size: 15px;
+     }         
+     .home .nav ul li{
+       width: 100%;
+       margin: 5px; 
+     }        
+
+     .home .nav ul li a{
+         display: flex;
+         justify-content: space-around;
+         font-size: 10px;
+         
+     }
+     img{
+         width: 100%;
+         
+     }
+     .images{
+        display: block;
+        width: 100%;
+     }
+     .images .one{
+         width: 70%;
+         margin: 50px;
+     }
+     .images .two{
+        width: 70%;
+        margin: 50px;
+    }
+    .images .three{
+        width: 70%;
+        margin: 50px;
+    }
+    .images .four{
+        width: 70%;
+        margin: 50px;
+    }
+    .images .five{
+        width: 70%;
+        margin: 50px;
+    }
+    .source{
+        display:block;
+        font-size:10px;
+        width: 100%;
+    }
+    .source h1{
+        font-size: 17px;
+    }
+
+    h2::after{
+    content: "";
+     width: 51%;
+     height: 10px;
+     top: 22%;
+     right: 0;
+     opacity: 1.5;
+     left: 45%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .place{
+        display: block;
+    }
+    .place .point{
+        width: 80%;
+    }
+    .end{
+        display: flex;
+        width: 70%;    
+        height: 70%;  
+        margin: 40px;
+    }
+    .end .ww h1{
+        width: 100%;
+        font-size: 15px;
+        
+    }
+    .end .ww p{
+        width: 100%;
+        font-size: 8px;
+        justify-content: space-between;
+    }
+}
+
+
+@media(max-width:950px){
+    body{
+        overflow-x: hidden;
+    }
+    .home .nav ul .logo{
+        font-size: 15px;
+        float: left;
+     }         
+     .home .nav ul li a{
+       width: 100%;
+      display: flex;
+     }        
+
+     .home .nav ul li a{
+         font-size: 15px;
+     }
+     img{
+         width: 100%;
+         
+     }
+     .images{
+        width: 130%;
+        background-size: 100% 100%;
+     }
+     .images .one{
+         width: 40%;
+         margin: 50px;
+     }
+     .images .two{
+        width: 40%;
+        margin: 50px;
+    }
+    .images .three{
+        width: 40%;
+        margin: 50px;
+    }
+    .images .four{
+        width: 40%;
+        margin: 50px;
+    }
+    .images .five{
+        width: 40%;
+        margin: 50px;
+    }
+    .source{
+        display:block;
+        font-size:10px;
+        width: 100%;
+    }
+    .source h1{
+        font-size: 17px;
+    }
+
+    h2::after{
+     content: "";
+     width: 90%;
+     height: 10px;
+     top: 22%;
+     right: 0;
+     opacity: 1.5;
+     left: 25%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .place{
+        display: block;
+    }
+    .place .point{
+        width: 80%;
+    }
+    .end{
+        display: flex;
+        width: 70%;    
+        height: 70%;  
+        margin: 40px;
+    }
+    .end .ww h1{
+        width: 100%;
+        font-size: 15px;
+    }
+    .end .ww p{
+        width: 100%;
+        font-size: 8px;
+        justify-content: space-between;
+    }
+
+
+}
